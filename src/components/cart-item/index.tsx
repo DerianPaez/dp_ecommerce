@@ -47,7 +47,7 @@ export default function CartItem({ id, name, price, image, productId, quantity }
       <CardBody className='w-full grid gap-4 grid-flow-row auto-rows-max self-center'>
         <div>
           <div className='grid g-full lg:grid-flow-col gap-0 lg:gap-4 lg:justify-between'>
-            <Link href={id} color='foreground' underline='hover' className='text-sm  cursor-pointer'>
+            <Link href={productId} color='foreground' underline='hover' className='text-sm  cursor-pointer'>
               <h3 className='text-lg font-semibold'>{name}</h3>
             </Link>
             <span className='text-xl font-semibold'>$ {Number((price * count).toFixed(2))}</span>
